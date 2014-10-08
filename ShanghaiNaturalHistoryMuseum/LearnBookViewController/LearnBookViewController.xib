@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearnBookViewController">
+            <connections>
+                <outlet property="buttonA" destination="WJD-Nf-P6S" id="23f-4e-8Hc"/>
+                <outlet property="buttonB" destination="tXJ-sQ-JFZ" id="MNm-Kt-i6Q"/>
+                <outlet property="buttonC" destination="jDc-PW-lnn" id="I8C-mv-OQn"/>
+                <outlet property="buttonD" destination="kh1-xW-dGV" id="CIC-Hl-VmP"/>
+                <outlet property="infoView1" destination="koV-Ec-F28" id="CMg-lh-z6i"/>
+                <outlet property="question1View" destination="PrF-2l-fbx" id="1QI-8b-lxs"/>
+                <outlet property="question2View" destination="imH-hs-Bfn" id="IGv-FT-f8z"/>
+                <outlet property="rightView" destination="fyD-nV-ACC" id="EcS-GR-rUd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wrongView" destination="M6J-8Y-gJo" id="DWQ-Wo-IAn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" id="mkl-Us-Qgq">
+                    <rect key="frame" x="0.0" y="110" width="1024" height="658"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </scrollView>
+                <view contentMode="scaleToFill" id="imH-hs-Bfn">
+                    <rect key="frame" x="0.0" y="110" width="1024" height="658"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lb_question2_back.png" id="a5N-bx-E8k">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="658"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="PrF-2l-fbx">
+                    <rect key="frame" x="0.0" y="110" width="1024" height="658"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learnbook_back1.png" id="EIK-nf-phx">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="658"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WJD-Nf-P6S">
+                            <rect key="frame" x="489" y="189" width="52" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="learnbook_un_a.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedBtn:" destination="-1" eventType="touchUpInside" id="5fD-UY-KGo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jDc-PW-lnn">
+                            <rect key="frame" x="489" y="341" width="52" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="learnbook_un_c.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedBtn:" destination="-1" eventType="touchUpInside" id="WOx-aQ-EXs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kh1-xW-dGV">
+                            <rect key="frame" x="489" y="417" width="52" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="learnbook_un_d.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedBtn:" destination="-1" eventType="touchUpInside" id="WUn-MP-oF9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tXJ-sQ-JFZ">
+                            <rect key="frame" x="489" y="265" width="52" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="learnbook_un_b.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedBtn:" destination="-1" eventType="touchUpInside" id="ua8-hF-bZw"/>
+                            </connections>
+                        </button>
+                        <view hidden="YES" contentMode="scaleToFill" id="fyD-nV-ACC">
+                            <rect key="frame" x="489" y="537" width="500" height="86"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learnbbook_right_back.png" id="Lug-5B-wDw">
+                                    <rect key="frame" x="0.0" y="0.0" width="500" height="86"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dqj-ZW-YlO">
+                                    <rect key="frame" x="211" y="21" width="187" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="learnbook_right_btn.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickedBtn:" destination="-1" eventType="touchUpInside" id="8Mz-ex-VuU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" id="M6J-8Y-gJo">
+                            <rect key="frame" x="369" y="537" width="620" height="86"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learnbook_wrong_back.png" id="lyM-My-en2">
+                                    <rect key="frame" x="0.0" y="0.0" width="620" height="86"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W6S-es-nxC">
+                                    <rect key="frame" x="331" y="21" width="187" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="learnbook_wrong_btn.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickedBtn:" destination="-1" eventType="touchUpInside" id="MQu-n6-YP0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="koV-Ec-F28">
+                            <rect key="frame" x="-1024" y="0.0" width="1024" height="658"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learnbook_info1.png" id="8ed-wJ-a1P">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="658"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ky7-C0-5Rq">
+                                    <rect key="frame" x="944" y="22" width="42" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="learnbook_info_back.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickedBtn:" destination="-1" eventType="touchUpInside" id="xE0-Ne-gpZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <point key="canvasLocation" x="435" y="292"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lb_question2_back.png" width="1024" height="658"/>
+        <image name="learnbbook_right_back.png" width="500" height="86"/>
+        <image name="learnbook_back1.png" width="1024" height="658"/>
+        <image name="learnbook_info1.png" width="1024" height="658"/>
+        <image name="learnbook_info_back.png" width="42" height="42"/>
+        <image name="learnbook_right_btn.png" width="187" height="44"/>
+        <image name="learnbook_un_a.png" width="52" height="52"/>
+        <image name="learnbook_un_b.png" width="52" height="52"/>
+        <image name="learnbook_un_c.png" width="52" height="52"/>
+        <image name="learnbook_un_d.png" width="52" height="52"/>
+        <image name="learnbook_wrong_back.png" width="620" height="86"/>
+        <image name="learnbook_wrong_btn.png" width="187" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
