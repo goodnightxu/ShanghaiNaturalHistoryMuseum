@@ -26,7 +26,7 @@
 #import <Reachability.h>
 
 #pragma mark - 配置
-#define kServerAddress @"http://211.144.107.201:9090/"
+//#define kServerAddress @"http://211.144.107.201:9090/"
 //#define kServerAddress @"http://10.2.10.16:8080/"
 
 //用户管理
